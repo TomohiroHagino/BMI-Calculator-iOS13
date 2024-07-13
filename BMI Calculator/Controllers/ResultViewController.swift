@@ -1,0 +1,28 @@
+//
+//  RsultViewController.swift
+//  BMI Calculator
+//
+//  Created by Tomohiro Hagino on 2024/07/13.
+//  Copyright © 2024 Angela Yu. All rights reserved.
+//
+
+import UIKit
+
+class ResultViewController: UIViewController {
+
+    var bmiValue: String?
+
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        bmiLabel.text = bmiValue
+    }
+    
+    @IBAction func recalcuratePressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+}
